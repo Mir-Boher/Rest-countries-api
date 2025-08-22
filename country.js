@@ -71,7 +71,7 @@ async function searchCountry() {
     );
     const countries = await response.json();
     if (countries.status === 404) {
-      countriesSection.innerHTML = `<h2>Country not found</h2>`;
+      countriesSection.innerHTML = `<h2 class="not-found-message">Country not found</h2>`;
     } else {
       countriesSection.innerHTML = "";
       displayCountries(countries);
