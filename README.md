@@ -35,9 +35,7 @@ A web application to explore countries around the world using the REST Countries
 
 ## Link
 
-Paste your hosted project link here:
-
-[Live Demo](YOUR_PROJECT_LINK)
+[Live Demo](https://countryexplorers.netlify.app/)
 
 ## License
 
