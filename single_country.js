@@ -65,7 +65,6 @@ async function displayCountryDetails(country) {
             <div class="border-countries">
               <p>Border Countries:</p>
               <div class="border-countries-container">
-              
               </div>
             </div>
         </div>
@@ -94,6 +93,10 @@ async function fetchBorderCountries(borderCodes) {
       const borderEl = document.createElement("span");
       borderEl.textContent = borderCountry.name.common;
       borderEl.classList.add("border-country");
+      borderEl.dataset.code = borderCountry.cca2;
+      borderEl.addEventListener("click", () => {
+        window.location.href = `single_country.html?code=${borderCountry.cca2}`;
+      });
       borderCountriesContainer.appendChild(borderEl);
     });
   } catch (error) {

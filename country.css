@@ -226,6 +226,7 @@ header .dark-light-container:hover {
   background: var(--element-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* This is the class we are adding dynamically through JS */
 .not-found-message {
